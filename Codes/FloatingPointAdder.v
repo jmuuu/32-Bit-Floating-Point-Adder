@@ -6,7 +6,7 @@ wire [22:0]MA; wire [22:0]MB; wire [7:0]EA; wire [7:0]EB;
 assign MB[22:0]=B[22:0];
 // Procuring the value of Exponents EA and EB assign EA = A[30:23];
 assign EB = B[30:23];
-/ /C  alculation of the magnitude of the subtraction of the exponents // This will be used to decide the input given to right shifter
+//C  alculation of the magnitude of the subtraction of the exponents // This will be used to decide the input given to right shifter
 wire [7:0]Modulo;
 wire Borrow;
 Sub_Result subtract(EA,EB,Modulo,Borrow);
